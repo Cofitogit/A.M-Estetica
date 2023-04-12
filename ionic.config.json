@@ -1,0 +1,7 @@
+{
+  "name": "angular-estetic-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
