@@ -1,0 +1,83 @@
+{
+    "consejos": [
+      {
+        "titulo": "Cuidado de la piel",
+        "descripcion": "Limpia tu piel suavemente con un limpiador facial adecuado para tu tipo de piel y no te olvides de hidratarla con una crema hidratante diariamente."
+      },
+      {
+        "titulo": "Cuidado del cabello",
+        "descripcion": "Evita el uso excesivo de calor en el cabello, como secadores y planchas, para prevenir daños y mantenerlo saludable. Aplica acondicionador regularmente para mantenerlo hidratado."
+      },
+      {
+        "titulo": "Cuidado de la cara",
+        "descripcion": "Exfolia tu rostro regularmente para eliminar las células muertas de la piel y promover la renovación celular. Aplica protector solar todos los días para proteger tu piel del sol."
+      },
+      {
+        "titulo": "Cuidado de las manos",
+        "descripcion": "Hidrata tus manos con una crema de manos nutritiva después de lavarlas para mantenerlas suaves e hidratadas. Usa guantes cuando realices tareas que puedan dañar tus manos, como lavar platos o limpiar con productos químicos."
+      },
+      {
+        "titulo": "Alimentación saludable",
+        "descripcion": "Come una dieta equilibrada que incluya frutas, verduras, proteínas magras y grasas saludables para mantener tu piel, cabello y uñas saludables desde adentro hacia afuera."
+      },
+      {
+        "titulo": "Higiene dental",
+        "descripcion": "Cepilla tus dientes al menos dos veces al día y usa hilo dental para prevenir la acumulación de placa y el mal aliento. Visita a tu dentista regularmente para chequeos y limpiezas profesionales."
+      },
+      {
+        "titulo": "Hidratación",
+        "descripcion": "Bebe suficiente agua a lo largo del día para mantener tu cuerpo y piel bien hidratados. Evita el consumo excesivo de alcohol y cafeína, ya que pueden causar deshidratación."
+      },
+      {
+        "titulo": "Ejercicio regular",
+        "descripcion": "Realiza actividad física regularmente para mantener tu cuerpo en forma y promover una piel saludable. El ejercicio ayuda a mejorar la circulación sanguínea y a eliminar toxinas del cuerpo."
+      },
+      {
+        "titulo": "Descanso adecuado",
+        "descripcion": "Duerme lo suficiente todas las noches para permitir que tu cuerpo se recupere y repare. El descanso adecuado es esencial para mantener una piel y cabello saludables."
+      },
+      {
+        "titulo": "Gestión del estrés",
+        "descripcion": "Encuentra formas efectivas de manejar el estrés, como practicar la respiración profunda, meditar, hacer yoga o practicar actividades relajantes. El estrés puede afectar negativamente tu piel y cabello."
+      },{
+        "titulo": "Mantén tus uñas limpias y recortadas",
+        "descripcion": "Para evitar infecciones y problemas de salud en las uñas, asegúrate de mantenerlas limpias y recortadas regularmente."
+      },
+      {
+        "titulo": "Evita fumar y exposición al humo de segunda mano",
+        "descripcion": "El humo del tabaco puede dañar tu piel, cabello y uñas, así que es importante evitar fumar y la exposición al humo de segunda mano."
+      },
+      {
+        "titulo": "Usa productos de cuidado personal adecuados",
+        "descripcion": "Utiliza productos de cuidado personal que sean adecuados para tu tipo de piel y cabello, evitando aquellos que contengan ingredientes dañinos o agresivos."
+      },
+      {
+        "titulo": "Protege tu piel y ojos del sol",
+        "descripcion": "Usa gafas de sol, sombreros de ala ancha y aplica protector solar en todas las áreas expuestas de tu piel para protegerla del sol y prevenir daños."
+      },
+      {
+        "titulo": "Lava tus brochas y esponjas de maquillaje regularmente",
+        "descripcion": "Para prevenir la acumulación de bacterias y evitar infecciones en la piel, es importante lavar tus brochas y esponjas de maquillaje regularmente."
+      },
+      {
+        "titulo": "Mantén una buena postura",
+        "descripcion": "Una buena postura no solo previene problemas de espalda y cuello, sino que también mejora la apariencia de tu cuerpo en general."
+      },
+      {
+        "titulo": "Evita el uso de dispositivos electrónicos antes de dormir",
+        "descripcion": "El uso de dispositivos electrónicos antes de dormir puede afectar la calidad del sueño y provocar problemas de piel como ojeras. Es mejor evitarlos."
+      },
+      {
+        "titulo": "Realiza limpieza y organización regular de tus productos de cuidado personal y maquillaje",
+        "descripcion": "Mantén tus productos de cuidado personal y maquillaje limpios y organizados para asegurarte de usar productos frescos y en buen estado."
+      },
+      {
+        "titulo": "Haz ejercicio de relajación",
+        "descripcion": "El ejercicio de relajación, como el yoga o la meditación, puede ayudar a reducir el estrés y mejorar tu bienestar general, lo cual se reflejará en tu piel, cabello y uñas."
+      },
+      {
+        "titulo": "Consulta a un profesional si tienes problemas específicos",
+        "descripcion": "Si tienes problemas específicos en la piel, cabello o uñas, es importante consultar a un dermatólogo o a un profesional de cuidado capilar para recibir un diagnóstico y tratamiento adecuado."
+      }
+    ]
+  }

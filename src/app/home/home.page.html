@@ -1,20 +1,29 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Blank</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div id="home">
+    <img src="/assets/images/fondo.jpg" id="homeImg" alt="">
+    <div id="container">
+      <h1>A.M Aesthetics</h1>
+      <p>¡Descubre la belleza de una piel saludable con nuestra aplicación de cuidado de la piel!</p>
+    </div>
+  
+    <div id="container2">
+      <ion-button shape="round" size="large" id="btn-inpar" (click)="tratamientos()">Tratamientos</ion-button>
+      <ion-button shape="round" size="large" id="btn-par">Turnos</ion-button>
+      <ion-button shape="round" size="large" id="btn-inpar">Nosotros</ion-button>
+      <ion-button shape="round" size="large" id="btn-par">Contacto</ion-button>
+    </div>
+    <div *ngIf="consejoActual" class="consejos">
+      <ion-card class="ion-padding">
+        <ion-title id="consejoId">{{consejoActual.titulo}}</ion-title>
+        <p>
+          {{consejoActual.descripcion}}
+        </p>
+      </ion-card>
+    </div>
   </div>
 </ion-content>
