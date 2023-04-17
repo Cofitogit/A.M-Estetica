@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-back-button slot="fixed"></ion-back-button>
+</ion-header>
+
+<ion-content >
+  <img src="/assets/images/fondo2.jpg" id="turnosImg" />
+  <ion-grid id="turnos" class="ion-text-center">
+    <ion-row>
+      <ion-col>
+        <ion-card class="ion-padding ion-text-center turnos">
+          <ion-card-title style="color: white">
+            <ion-buttons slot="start">
+              <ion-back-button></ion-back-button>
+            </ion-buttons>
+            TURNOS</ion-card-title
+          >
+        </ion-card>
+        <ion-item>
+          <ion-label>Tratamiento:</ion-label>
+          <ion-select [(ngModel)]="selectedTreatment">
+            <ion-select-option value="PEELING">PEELING</ion-select-option>
+            <ion-select-option value="RADIOFRECIENCIA"
+              >RADIOFRECIENCIA</ion-select-option
+            >
+            <ion-select-option value="FACIAL">FACIAL</ion-select-option>
+            <!-- Agrega más opciones de tratamiento según tus necesidades -->
+          </ion-select>
+        </ion-item>
+
+        <ion-datetime
+          minuteValues="0"
+          hourValues="10,11,12,13,14,15,16,17"
+          [isDateEnabled]="isWeekday"
+          [firstDayOfWeek]="1"
+          locale="es-ES"
+          color="danger"
+        >
+        <span slot="time-label">Horario</span>
+        </ion-datetime>
+        <ion-button id="saveBtn" > Guardar turno </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- Agrega aquí la presentación de los horarios disponibles y otros elementos de la página -->
+</ion-content>

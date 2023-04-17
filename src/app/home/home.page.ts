@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 import { Animation, AnimationController } from '@ionic/angular';
@@ -17,6 +17,7 @@ export class HomePage {
   consejos!: any[];
   consejoActual: any;
   interval: any;
+  closeLogo: boolean = true;
 
   constructor(
     private animationCtrl: AnimationController,
@@ -28,18 +29,49 @@ export class HomePage {
     this.router.navigate(['/tratamientos']);
   }
 
+  aboutme() {
+    this.router.navigate(['/aboutme']);
+  }
+
   mostrarConsejo() {
     const indice = Math.floor(Math.random() * this.consejos.length);
     this.consejoActual = this.consejos[indice];
   }
 
-  ionViewWillEnter() {
+  turnos() {
+    this.router.navigate(['/turnos']);
+  }
+
+  ngOnInit() {
     this.consejosService.getConsejos().subscribe((data: any) => {
       this.consejos = data.consejos;
       this.mostrarConsejo();
-      this.interval = setInterval(() => this.mostrarConsejo(), 15000);
+      this.interval = setInterval(() => this.mostrarConsejo(), 12000);
     });
 
+    const logoImg: HTMLElement | null = document.getElementById('logoImg');
+    if (logoImg !== null) {
+      // Verificar si no es nulo
+      const animTitle: Animation = this.animationCtrl
+        .create()
+        .addElement(logoImg)
+        .duration(2000)
+        .iterations(1)
+        .keyframes([
+          { offset: 0, transform: 'translate(-50%, -50%) scale(1)' },
+          { offset: 0.25, transform: 'translate(-50%, -50%) scale(0.9)' },
+          { offset: 0.5, transform: 'translate(-50%, -50%) scale(1)' },
+          { offset: 0.85, transform: 'translate(-50%, -50%) scale(0.8)' },
+          { offset: 1, transform: 'translate(-50%, -50%) scale(5)' },
+        ]);
+
+      animTitle.play();
+    }
+
+    setTimeout(() => this.closeLogo = false, 1900)
+  }
+
+  ionViewWillEnter() {
     const homeTitle: HTMLElement | null = document.getElementById('container'); // Especificar el tipo como HTMLElement | null
     if (homeTitle !== null) {
       // Verificar si no es nulo
@@ -50,7 +82,7 @@ export class HomePage {
         .iterations(Infinity)
         .keyframes([
           { offset: 0, transform: 'scale(1)' },
-          { offset: 0.5, transform: 'scale(0.95)', borderRadius: '20px' },
+          { offset: 0.5, transform: 'scale(0.95)' },
           { offset: 1, transform: 'scale(1)' },
         ]);
       animTitle.play();

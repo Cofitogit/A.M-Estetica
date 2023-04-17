@@ -1,0 +1,54 @@
+#turnos {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 500px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+ion-card {
+    --background: rgba(255, 49, 155, 0.726);
+    width: 95%;
+    margin-inline: auto;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+#turnosImg {
+    width: 100%;
+    position: fixed;
+    height: 100vh;
+}
+
+ion-item {
+    background: white !important;
+    padding-inline: 5px;
+    color: #ff5b78;
+    font-weight: bolder;
+    border-radius: 20px;
+    margin-block: 10px;
+}
+
+.select-text {
+    text-overflow: unset !important;
+}
+
+ion-label {
+    color: rgb(105, 105, 105) !important;
+}
+
+ion-datetime {
+    border-radius: 15px;
+}
+
+#saveBtn {
+    width: 70%;
+    margin-top: 20px;
+    --border-radius: 20px;
+}
+
+ion-button {
+    --background: rgb(255 49 154);
+}

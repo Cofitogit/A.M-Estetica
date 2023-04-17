@@ -14,7 +14,23 @@ import { IonicModule } from '@ionic/angular';
 export class TratamientosPage implements OnInit {
   constructor(private animationCtrl: AnimationController) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    const options: HTMLElement | null = document.getElementById('options'); // Especificar el tipo como HTMLElement | null
+    if (options !== null) {
+      // Verificar si no es nulo
+      const animTitle: Animation = this.animationCtrl
+        .create()
+        .addElement(options)
+        .duration(20000)
+        .iterations(Infinity)
+        .keyframes([
+          { offset: 0, marginInline: '' },
+          { offset: 0.5, backgroundSize: '50px 50px' },
+          { offset: 1, backgroundSize: '25px 25px' },
+        ]);
+      animTitle.play();
+    }
+  }
 
   ionViewWillEnter() {
     const animation: HTMLElement | null =
@@ -33,20 +49,16 @@ export class TratamientosPage implements OnInit {
         ]);
       animTitle.play();
     }
-    const obtions: HTMLElement | null =
-    document.getElementById('options'); // Especificar el tipo como HTMLElement | null
-  if (animation !== null) {
+
+    const tratamientosContainer: HTMLElement | null =
+    document.getElementById('tratamientosContainer'); // Especificar el tipo como HTMLElement | null
+  if (tratamientosContainer !== null) {
     // Verificar si no es nulo
     const animTitle: Animation = this.animationCtrl
       .create()
-      .addElement(animation)
-      .duration(20000)
-      .iterations(Infinity)
-      .keyframes([
-        { offset: 0, marginInline: "" },
-        { offset: 0.5, backgroundSize: '50px 50px' },
-        { offset: 1, backgroundSize: '25px 25px' },
-      ]);
+      .addElement(tratamientosContainer)
+      .duration(300)
+      .fromTo("transform", "scale(0)", "scale(1)")
     animTitle.play();
   }
   }
